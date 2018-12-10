@@ -1,0 +1,13 @@
+<mat-drawer-container autosize>
+  <mat-drawer #drawer mode="side" [opened]="sideviewOpened$ | async">
+    <p>Content inside the sideview</p>
+  </mat-drawer>
+
+  <div>
+    <h3>Press button to toggle sideview</h3>
+    <p>The mat-drawer (sideview) component is bound to the stream from SideviewService's BehaviourSubject.</p>
+    <button mat-raised-button color="primary" (click)="toggleSideview()">
+      Toggle sideview
+    </button>
+  </div>
+</mat-drawer-container>
